@@ -1,0 +1,48 @@
+{
+	"name" : "appserver-io/phar",
+	"type" : "package",
+	"description" : "Utility package that provides high performance PHAR helper functions.",
+	"homepage" : "https://github.com/appserver-io/phar",
+	"license" : "OSL-3.0",
+	"require" : {
+		"php" : ">=5.3.0",
+		"nategood/commando" : "*"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "3.7.*",
+		"appserver-io/build" : "0.1.*"
+	},
+	"bin" : [
+		"bin/phar"
+	],
+	"autoload" : {
+		"psr-0" : {
+			"AppserverIo\\Phar" : [
+				"src/",
+				"tests/"
+			]
+		}
+	},
+	"config" : {
+		"github-oauth" : {
+			"github.com" : "604a3b5943228e434a5b52c2ba3cf72286d30db9"
+		}
+	},
+	"authors" : [{
+			"name" : "Tim Wagner",
+			"email" : "tw@appserver.io",
+			"homepage" : "https://github.com/wagnert",
+			"role" : "Developer"
+		}
+	],
+	"support" : {
+		"email" : "tw@appserver.io",
+		"issues" : "https://github.com/appserver-io/phar/issues",
+		"source" : "https://github.com/appserver-io/phar"
+	},
+	"keywords" : [
+		"properties",
+		"resources",
+		"settings"
+	]
+}
