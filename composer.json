@@ -9,8 +9,7 @@
 		"nategood/commando" : "*"
 	},
 	"require-dev" : {
-		"phpunit/phpunit" : "3.7.*",
-		"appserver-io/build" : "0.1.*"
+		"appserver-io/build" : "~1.0"
 	},
 	"bin" : [
 		"bin/phar"
@@ -37,7 +36,7 @@
 	],
 	"support" : {
 		"email" : "tw@appserver.io",
-		"issues" : "https://github.com/appserver-io/phar/issues",
+		"issues" : "https://github.com/appserver-io/appserver/issues",
 		"source" : "https://github.com/appserver-io/phar"
 	},
 	"keywords" : [
