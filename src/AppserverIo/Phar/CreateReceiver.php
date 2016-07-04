@@ -67,7 +67,7 @@ class CreateReceiver implements Receiver
     /**
      * Initializes the instance with the data necessary to create a new PHAR archive.
      *
-     * @param striog  $pharName  The name of the PHAR archive
+     * @param string  $pharName  The name of the PHAR archive
      * @param string  $directory The directory to create the PHAR archive from
      * @param integer $flags     The flags to create the PHAR archive with
      * @param string  $alias     The PHAR archives alias
@@ -100,11 +100,7 @@ class CreateReceiver implements Receiver
      */
     public function execute()
     {
-        try {
-            $this->buildFromDirectory();
-        } catch (\Exception $e) {
-            error_log($e->__toString());
-        }
+        $this->buildFromDirectory();
     }
 
     /**
